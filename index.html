@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>AMP</title>
+	<meta name="Author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	<script>
+		$(function() {
+		var array = [
+		"image/eq-1.jpg",
+		"image/eq-2.jpg",
+		"image/eq-3.jpg",
+		];
+		var l = array.length;
+		var r = Math.floor(Math.random()*l);
+		var imgurl = array[r];
+		$("img#randomimg").attr({"src":imgurl});
+		});
+	</script>
+
+	<script src="js/jquery.matchHeight-min.js"></script>
+
+
+
+</head>
+<body class="drawer drawer--right">
+
+
+	<header>
+		<div class="container">
+
+			<div class="clearfix">
+
+				<div class="logo">
+					<a href="https://placeholder.com"><img src="http://via.placeholder.com/40x40" alt="logo"></a>
+				</div>
+
+				<div role="banner" class="sp-menu">
+
+					<button type="button" tabindex="0" accesskey="M" class="drawer-toggle drawer-hamburger">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="drawer-hamburger-icon"></span>
+                    </button>
+
+					<nav class="drawer-nav" role="navigation">
+						<ul class="drawer-menu">
+
+							<li><a class="drawer-brand" href="#">HOME</a></li>
+
+							<li><a class="drawer-menu-item" href="#about">About</a></li>
+
+							<li><a class="drawer-menu-item" href="#activity">Activity</a></li>
+
+							<li><a class="drawer-menu-item" href="#customer-voice">Customer voice</a></li>
+
+							<li><a class="drawer-menu-item" href="#work">Work</a></li>
+
+							<li><a class="drawer-menu-item" href="#play-list">Play list</a></li>
+
+							<li><a class="drawer-menu-item" href="#equipment">Equipment</a></li>
+
+							<li><a class="drawer-menu-item" href="#workflow">Workflow</a></li>
+
+							<li><a class="drawer-menu-item" href="#price">Price</a></li>
+
+							<li><a class="drawer-menu-item" href="#contact">Contact</a></li>
+
+						</ul>
+					</nav>
+				</div>
+
+				<nav>
+					<ul class="pc-menu">
+						<li><a href="#about">About</a></li>
+						<li><a href="#activity">Activity</a></li>
+						<li><a href="#customer-voice">Customer voice</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#play-list">Play list</a></li>
+						<li><a href="#equipment">Equipment</a></li>
+						<li><a href="#workflow">Workflow</a></li>
+						<li><a href="#price">Price</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
+
+		</div>
+	</header>
+
+	<main>
+
+		<div class="bg-hero">
+			<!--            透明かつ薄暗くさせるためのクラス -->
+			<div class="bg-inner">
+				<div class="container">
+					<div class="center">
+						<p class="main-title wow fadeInUp text-left" data-wow-delay=".2s">
+							Arai<br> Music
+							<br> Production
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section id="about">
+			<div class="container">
+
+				<div class="center">
+					<div class="wow fadeInUp title" data-wow-delay=".2s">
+						<h2>About</h2>
+						<img class="diagram" src="image/signal@2x.png" alt="section-diagram">
+
+
+					</div>
+
+					<p class="text-left message">2009年頃からニコニコ動画を中心に、作曲、編曲、MIX、マスタリング、ギター演奏、ドラム打ち込み等様々な音楽活動を行って参りました。現在制作している主なジャンルとしてはロックやメタル系など激しい部類のバンドサウンドをベースにした楽曲を制作しております。品質は元よりユーザー視点に立った丁寧なサービスを提供できるよう日々奮闘しております。</p>
+
+				</div>
+			</div>
+		</section>
+
+		<section>
+
+			<div id="box1">
+
+			</div>
+
+		</section>
+
+
+
+
+
+
+		<section id="activity">
+			<div class="bg-main01">
+				<!--                不要か？ -->
+				<div class="bg-main01-inner">
+					<div class="container">
+						<div class="center">
+
+
+							<div class="wow fadeInUp title" data-wow-delay=".2s">
+								<h2>Activity</h2>
+								<img class="diagram" src="image/signal@2x.png" alt="section-diagram">
+							</div>
+
+							<div class="embed clearfix">
+								<div class="twitter wow fadeInUp" data-wow-delay=".2s">
+									<a class="twitter-timeline" data-width="100%" data-height="400" data-theme="dark" data-link-color="#E95F28" href="https://twitter.com/AraiAyumu?ref_src=twsrc%5Etfw">Tweets by AraiAyumu</a>
+									<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								</div>
+
+								<div class="coconara wow fadeInUp" data-wow-delay=".2s">
+									<a class="coconala-widget coconara-margin" href="https://coconala.com/services/60790" data-service_id="60790" data-width="100%"
+									 data-comment="0" data-invite="0" data-user_id="180190">作編曲の制作をお手伝い致します あらゆるニーズに応えられる様頑張りますのでまずご相談ください</a>
+									<script>
+										!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://coconala.com/js/coconala_widget.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','coconala-wjs');
+									</script>
+								</div>
+
+
+
+								<div class="hatena wow fadeInUp" data-wow-delay=".2s">
+									<a href="http://arai-sound.hatenablog.com/">
+                                <img src="image/hatena.jpg" width="100%"  alt="hatena blog">
+                                    </a>
+								</div>
+
+
+								<div class="niconico wow fadeInUp" data-wow-delay=".2s">
+
+									<iframe width="100%" height="170" title="ニコニコ動画" src="http://ext.nicovideo.jp/thumb_mylist/20779196" style="border:solid 1px #CCC;"></iframe >
+
+								</div>
+
+
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	<section>
+
+			<div id="box2">
+
+			</div>
+
+		</section>
+        
+        
+        
+        
+        
+		<section>
+			<div class="bg-main02">
+				<!--                不要か？ -->
+				<div class="bg-main02-inner">
+					<div class="container">
+
+                        <div class="clearfix">
+						<div id="customer-voice" class="customer-voice">
+							<div class="center wow fadeInUp title" data-wow-delay=".3s">
+								<h2>Customer voice</h2>
+								<img class="diagram tablet-diagram pc-diagram" src="image/signal@2x.png" alt="section-diagram">
+							</div>
+
+							<div class="text-left comment">
+
+								<p>・男性<br>とても丁寧で真摯に対応してくださります！ こんな曲にしたいと伝えると相談に乗ってくれると思いますよ！<br>これからも利用していきたいと思います！ </p>
+
+								<p>・男性<br>ありがとうございました。<br>度々優柔不断なお願いをしてしまったのにすべて応えて頂いて本当に助かりました。 個人的にはギターの音が生々しくなってたのがとても良かったです。 また機会があればその時はよろしくお願いします。
+								</p>
+
+								<p>・男性<br>初めて歌ってみたを投稿したく、mixをお願い致しました。<br>技術も高く大変満足のいくものができました！ それ以上に、新井様の一生懸命さが何よりもうれしかったし、またお願いしたいと思いました！<br>ありがとうございました！
+								</p>
+
+
+								<p>・女性<br>初心者で不安だったのですが丁寧に対応していただいて嬉しかったです！<br>また、機会があればお願いいたします(*´ω`*) </p>
+
+							</div>
+						</div>
+
+
+						<div id="work" class="work center">
+
+							<div class="wow fadeInUp title" data-wow-delay=".3s">
+								<h2>Work</h2>
+								<img class="diagram tablet-diagram pc-diagram" src="image/signal@2x.png" alt="section-diagram">
+							</div>
+
+
+							<h3>2017</h3>
+
+							<div class="text-left">
+								<p>オリジナルミニアルバム<br>「群青の焼けた痕」</p>
+								<p>オリジナルミニアルバム<br>「新しいフォルダー」</p>
+								<p>溝端れこーず1stEP<br>「ハローマイライフ」<br>ドラム打ち込み・MIX・マスタリング</p>
+								<p>溝端れこーず2ndEP<br>「ショートショート」<br>ドラム打ち込み・MIX・マスタリング</p>
+								<p>昭和63年生まれ同級生コンビ<br>ゆとり合同」1曲目の作編曲、<br>及び、全マスタリング
+								</p>
+							</div>
+
+						</div>
+					
+</div>
+
+					<div id="play-list" class="play-list center">
+
+						<div class="wow fadeInUp title" data-wow-delay=".2s">
+							<h2>Play list</h2>
+							<img class="diagram" src="image/signal@2x.png" alt="section-diagram">
+						</div>
+
+						<div class="wow fadeInUp" data-wow-delay=".2s">
+
+							<iframe class="embed-soundcloud" width="100%" height="450" title="Sound cloud" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/385226078&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+
+
+		</section>
+
+
+		<section>
+			<div class="bg-main03">
+				<!--                不要か？ -->
+				<div class="bg-main03-inner">
+					<div class="container">
+
+						<div id="equipment" class="equipment center">
+
+							<div class="wow fadeInUp title" data-wow-delay=".2s">
+								<h2>Equipment</h2>
+								<img class="diagram" src="image/signal@2x.png" alt="section-diagram">
+							</div>
+
+
+
+
+							<img id="randomimg" class="img-switch center" src="" alt="equipment-pics">
+
+
+
+
+							<div class="flex eq-pc">
+
+								<img class="parallel" src="image/eq-1.jpg">
+								<img class="parallel" src="image/eq-2.jpg">
+								<img class="parallel" src="image/eq-3.jpg">
+
+
+							</div>
+
+
+							<div class="text-left">
+								<p>IF:<br>・RME fireface UFX</p>
+
+								<p>ヘッドホン：<br>・ULTRASONE HFI-580<br>・SONY MDR-CD900ST</p>
+
+								<p>スピーカー：<br>・Focal CMS 65</p>
+
+								<p>DAW：<br>・Steinberg Cubase 8<br>・Avid ProTools 10 / 11 / 12<br>・Steinberg WaveLab 8 / 9</p>
+
+								<p>Plugins：<br>・Waves<br>・UAD<br>・Slate Digital<br>・IK Multimedia<br>・Antares<br>・iZotope<br>・FX Phantion<br>・XLN Audio</p>
+
+								<p>etc...</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<section>
+			<div class="bg-main04">
+				<!--                不要か？ -->
+				<div class="bg-main04-inner">
+					<div class="container">
+
+						<div class="clearfix">
+
+							<div class="workflow center" id="workflow">
+
+								<div class="wow fadeInUp title" data-wow-delay=".2s">
+									<h2>Workflow</h2>
+									<img class="diagram tablet-diagram pc-diagram" src="image/signal@2x.png" alt="section-diagram">
+								</div>
+
+								<div class="text-left">
+
+									<ol>
+										<li class="common-step">1. お問い合わせ</li>
+										<li class="common-step">2. 契約</li>
+										<li class="common-step">3. 打ち合わせ</li>
+										<li class="demo-step">4. デモ作曲/編曲</li>
+										<li class="demo-step">5. デモ提出/すり合わせ</li>
+										<li class="mix-step">6. MIX</li>
+										<li class="master-step">7. Mastering</li>
+										<li class="final-step">8. 納品</li>
+									</ol>
+
+
+									<div class="sp-complement">
+										<h3>補足</h3>
+										<p>オレンジ色で囲まれた箇所は制作手順における共通項目となります。デモ作曲/編曲依頼の方は青色から、MIX依頼の方は水色から、Mastering依頼の方は紫色からとなります。<br>ご不明な点がございましたら下記Contactよりお問い合わせください。</p>
+									</div>
+
+								</div>
+							</div>
+
+
+							<div class="price center" id="price">
+
+								<div class="wow fadeInUp title" data-wow-delay=".2s">
+									<h2>Price</h2>
+									<img class="diagram tablet-diagram pc-diagram" src="image/signal@2x.png" alt="section-diagram">
+								</div>
+
+
+
+								<div class="text-left ">
+
+									<p>作曲/編曲:10000円〜</p>
+									<p>ボーカルMIX :3000円〜</p>
+									<p>オケMIX :5000円〜</p>
+									<p>Mastering : 3000円〜</p>
+
+									<p>*最低価格表示です。<br> 内容により加算されます。
+									</p>
+									<p>*お支払方法は銀行振込のみ<br>とさせて頂いております。
+										<br>振込先に関しましては契約時に<br>お知らせ 致します。</p>
+
+
+
+
+
+
+								</div>
+
+
+
+
+							</div>
+
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+		<section>
+			<!--                不要か？ -->
+			<div class="bg-main03-inner">
+				<div class="container">
+
+					<div id="contact" class="contact center">
+
+						<div class="wow fadeInUp title" data-wow-delay=".2s">
+							<h2>Contact</h2>
+							<img class="diagram" src="image/signal@2x.png" alt="section-diagram">
+						</div>
+
+
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc7Hq3WnrigqlS_FD-uHDtELsZVO6ChrSwbOkmlmj_D6bjg9g/viewform?embedded=true"
+						 width="100%" height="900" title="グーグルフォーム">読み込んでいます...</iframe>
+
+
+
+						<p id="page-top"><a href="#wrap">TOP</a></p>
+
+
+					</div>
+
+				</div>
+			</div>
+
+
+		</section>
+
+
+	</main>
+
+
+
+	<footer>
+
+		<p class="center"><small>&copy;2017 APM All rights reserved</small></p>
+
+	</footer>
+
+
+
+
+
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.js"></script>
+
+
+
+	<script type="text/javascript">
+		$(".navbar-fixed-top").headroom();
+		//    $(".headroom").headroom();
+	</script>
+
+
+
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+
+
+
+	<script src="js/iscroll.js"></script>
+	<script src="js/drawer.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			 $('.drawer').drawer();
+		});
+	</script>
+
+
+	<script>
+		$(function() {
+		    var topBtn = $('#page-top');    
+		    topBtn.hide();
+		    //スクロールが100に達したらボタン表示
+		    $(window).scroll(function () {
+		        if ($(this).scrollTop() > 1200) {
+		            topBtn.fadeIn();
+		        } else {
+		            topBtn.fadeOut();
+		        }
+		    });
+		    //スクロールしてトップ
+		    topBtn.click(function () {
+		        $('body,html').animate({
+		            scrollTop: 0
+		        }, 500);
+		        return false;
+		    });
+		});
+	</script>
+
+
+	<script>
+		$(function() {
+		    $('.twitter,.coconara,.hatena,.niconico').matchHeight();
+		});
+	</script>
+
+
+</body>
+</html>

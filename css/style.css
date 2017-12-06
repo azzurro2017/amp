@@ -1,0 +1,625 @@
+@charset "utf-8";
+
+
+
+
+
+/*　共通定義　*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Noto Sans Japanese", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", "メイリオ", sans-serif;
+  font-weight: normal;
+  line-height: 1.5em;
+  /*    テスト　*/
+  word-wrap: break-word;
+  background-color: #000
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff
+}
+
+
+
+li {
+  list-style: none;
+}
+
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+/*    //調整中　*/
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.parallel {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 10px 50px
+}
+
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+.text-left {
+  display: inline-block;
+  text-align: left
+}
+
+
+.title {
+  margin: 70px 0 50px 0;
+}
+
+#about,
+#activity,
+#customer-voice,
+#work,
+#play-list,
+#equipment,
+#workflow,
+#price,
+#contact {
+  padding-top: 30px;
+  margin-top: -30px;
+}
+
+
+
+.diagram {
+  width: 100%;
+}
+
+
+
+
+
+
+/* header */
+
+header {
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  z-index: 5;
+}
+
+
+.drawer-hamburger {
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* main */
+
+
+/* Hero */
+
+.bg-hero {
+  background-image: url(../image/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bg-inner {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 130px 0;
+}
+
+
+.main-title {
+  line-height: 1;
+  font-size: 7vw;
+}
+
+
+
+/* About */
+
+.bg-main01 {
+  background-image: url(../image/bg-main01@2x.png);
+  background-size: cover;
+  background-position: top;
+}
+
+
+
+.coconara-margin {
+  margin: 0 30%;
+}
+
+#about p {
+  width: 100%;
+}
+
+
+
+/* Activity */
+
+.twitter,
+.coconara,
+.hatena,
+.niconico {
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+/* Customer voice */
+
+.bg-main02 {
+  background-image: url(../image/bg-main02@2x.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+.comment p {
+  margin: 40px auto;
+  width: 70%
+}
+
+
+
+
+
+/* Work */
+
+.work h3 {
+  margin: 40px 0
+}
+
+.work p {
+  margin: 30px 0
+}
+
+
+
+
+
+
+/* Equipment */
+
+.bg-main03 {
+  background-image: url(../image/bg-main03@2x.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-switch {
+  max-width: 80%;
+}
+
+
+
+
+.equipment p {
+  margin: 30px 0
+}
+
+
+.eq-pc {
+  display: none;
+}
+
+
+/* Workflow */
+
+.workflow ol {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.workflow ol li {
+  padding: 15px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 1.3rem
+}
+
+
+.common-step {
+  background-color: #cb3a17
+}
+
+
+.demo-step {
+  background-color: #000073
+}
+
+.mix-step {
+  background-color: #00b7ee
+}
+
+.master-step {
+  background-color: #601986
+}
+
+
+.final-step {
+  background-color: #ff00ff
+}
+
+
+.sp-complement {
+  width: 70%;
+  margin: 40px auto 0;
+}
+
+
+
+
+/* Price */
+
+.price {
+  background-image: url(../image/bb-rp.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.price p {
+  margin: 20px 0
+}
+
+
+.tablet-complement {
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* Contact */
+
+#page-top {
+  position: fixed;
+  bottom: 60px;
+  right: 1px;
+  font-size: 77%;
+}
+
+#page-top a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  width: 30px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+
+#page-top a:hover {
+  text-decoration: none;
+  background: #999;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+  font-size: .5rem;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media screen and (min-width:768px) {
+
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .drawer-hamburger {
+    margin-right: 70px;
+  }
+
+
+
+
+  .tablet-diagram {
+    width: 90%;
+  }
+
+
+
+
+
+  .twitter,
+  .coconara,
+  .hatena,
+  .niconico,
+  .customer-voice,
+  .work,
+  .workflow,
+  .price {
+    width: 50%;
+    float: left
+  }
+
+
+
+
+  .sp-complement {
+    display: none;
+  }
+
+
+  .tablet-complement {
+    display: block;
+  }
+
+  .workflow ol {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+
+  .workflow ol li {
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+  }
+
+
+  #page-top {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    font-size: 77%;
+  }
+  /*    for palallax */
+  .price {
+    background-image: none;
+    font-size: 1.3rem;
+  }
+}
+
+
+
+@media screen and (max-width: 959px) {
+  .pc-menu {
+    display: none;
+  }
+  /*
+  #price {
+    margin: 100px;
+  }
+  */
+}
+
+
+@media screen and (min-width: 960px) {
+
+  h2 {
+    font-size: 4rem;
+    padding: 60px 0 15px;
+  }
+
+
+
+
+
+  a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: #FF4000;
+    -webkit-transition: 1.2s;
+    -webkit-transition: 1.6s;
+    transition: 1.6s;
+  }
+
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+    
+  #about p {
+  width: 60%;
+  margin: 100px 0 200px 
+}
+
+
+  .sp-menu {
+    display: none;
+  }
+
+  .pc-menu {
+    display: block;
+    float: right;
+    padding-top: 15px
+  }
+
+  .pc-menu li {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  .logo {
+    float: left;
+  }
+
+
+
+  .bg-hero {
+    background-image: url(../image/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .bg-inner {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 200px 0 500px;
+  }
+
+
+  .main-title {
+    line-height: 1;
+    font-size: 8rem;
+    margin-top: 140px
+  }
+
+
+
+
+
+
+  .bg-main01 {
+    background-image: url(../image/bb-rp.jpg);
+  }
+
+
+  .diagram {
+    width: 60%;
+  }
+
+  .pc-diagram {
+    width: 80%
+  }
+
+  .embed-soundcloud {
+    width: 60%;
+  }
+
+  .eq-pc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .eq-pc img {
+    max-width: 33.333%;
+    height: 300px
+  }
+
+
+
+
+  #box1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/sample01.jpeg);
+
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+  #box2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/sample02.jpeg);
+
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+  .img-switch {
+    display: none;
+  }
+}
