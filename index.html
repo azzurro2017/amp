@@ -154,7 +154,7 @@
 
 							<div class="embed clearfix">
 								<div class="twitter">
-									<a class="twitter-timeline" data-width="100%" data-height="400" data-theme="dark" data-link-color="#E95F28" href="https://twitter.com/AraiAyumu?ref_src=twsrc%5Etfw">Tweets by AraiAyumu</a>
+									<a class="twitter-timeline" data-width="80%" data-height="400" data-theme="dark" data-link-color="#E95F28" href="https://twitter.com/AraiAyumu?ref_src=twsrc%5Etfw">Tweets by AraiAyumu</a>
 									<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 								</div>
 
@@ -170,14 +170,14 @@
 
 								<div class="hatena">
 									<a href="http://arai-sound.hatenablog.com/">
-                                <img src="image/hatena.jpg" width="100%"  alt="hatena blog">
+                                <img src="image/hatena.jpg" width="80%"  alt="hatena blog">
                                     </a>
 								</div>
 
 
 								<div class="niconico">
 
-									<iframe width="100%" height="170" title="ニコニコ動画" src="http://ext.nicovideo.jp/thumb_mylist/20779196" style="border:solid 1px #CCC;"></iframe >
+									<iframe width="80%" height="170" title="ニコニコ動画" src="http://ext.nicovideo.jp/thumb_mylist/20779196" style="border:solid 1px #CCC;"></iframe >
 
 								</div>
 
@@ -266,7 +266,7 @@
 
 						<div class="wow fadeInUp" data-wow-delay=".2s">
 
-							<iframe class="embed-soundcloud" width="100%" height="450" title="Sound cloud" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/385226078&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+							<iframe class="embed-soundcloud" width="80%" height="450" title="Sound cloud" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/385226078&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
 
 								</div>
 							</div>
@@ -302,11 +302,11 @@
 
 
 
-							<div class="flex eq-pc">
+							<div class="eq-pc">
 
-								<img class="parallel" src="image/eq-1.jpg">
-								<img class="parallel" src="image/eq-2.jpg">
-								<img class="parallel" src="image/eq-3.jpg">
+								<img class="parallel" src="image/eq-1-sm.jpg">
+								<img class="parallel" src="image/eq-2-sm.jpg">
+								<img class="parallel" src="image/eq-3-sm.jpg">
 
 
 							</div>
@@ -460,27 +460,35 @@
 	</footer>
 
 
-
-
-
-
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.js"></script>
-
-
-
-	<script type="text/javascript">
-		$(".navbar-fixed-top").headroom();
-		//    $(".headroom").headroom();
+    <script>
+		$(function() {
+		    $('.twitter,.coconara,.hatena,.niconico').matchHeight();
+		});
 	</script>
-
-
-
-	<script src="js/wow.min.js"></script>
+    
+    
+    
+    
+    
+<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
+
+
+
+
+<script type="text/javascript">
+//ページ内リンク、#非表示。スムーズスクロール
+  $('a[href^="#"]').click(function(){
+    var speed = 800;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+</script>
 
 
 
@@ -518,11 +526,7 @@
 	</script>
 
 
-	<script>
-		$(function() {
-		    $('.twitter,.coconara,.hatena,.niconico').matchHeight();
-		});
-	</script>
+	
 
 
 </body>
