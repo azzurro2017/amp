@@ -23,7 +23,6 @@
 		});
 	</script>
 
-	<script src="js/jquery.matchHeight-min.js"></script>
 
 
 
@@ -152,11 +151,13 @@
 								<img class="diagram" src="image/signal@2x.png" alt="section-diagram">
 							</div>
 
-							<div class="embed clearfix">
+							<div class="embed flex">
+
 								<div class="twitter">
 									<a class="twitter-timeline" data-width="80%" data-height="400" data-theme="dark" data-link-color="#E95F28" href="https://twitter.com/AraiAyumu?ref_src=twsrc%5Etfw">Tweets by AraiAyumu</a>
 									<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 								</div>
+
 
 								<div class="coconara">
 									<a class="coconala-widget coconara-margin" href="https://coconala.com/services/60790" data-service_id="60790" data-width="100%"
@@ -168,6 +169,8 @@
 
 
 
+
+
 								<div class="hatena">
 									<a href="http://arai-sound.hatenablog.com/">
                                 <img src="image/hatena.jpg" width="80%"  alt="hatena blog">
@@ -175,21 +178,17 @@
 								</div>
 
 
+
 								<div class="niconico">
 
 									<iframe width="80%" height="170" title="ニコニコ動画" src="http://ext.nicovideo.jp/thumb_mylist/20779196" style="border:solid 1px #CCC;"></iframe >
-
-								</div>
-
-
-
-							</div>
+							    </div>
 
 						</div>
 					</div>
 				</div>
 			</div>
-
+            </div>
 		</section>
 
 	<section>
@@ -304,9 +303,9 @@
 
 							<div class="eq-pc">
 
-								<img class="parallel" src="image/eq-1-sm.jpg">
-								<img class="parallel" src="image/eq-2-sm.jpg">
-								<img class="parallel" src="image/eq-3-sm.jpg">
+								<img class="parallel" src="image/eq-1-sm.jpg" alt="keyboard">
+								<img class="parallel" src="image/eq-2-sm.jpg" alt="guiter">
+								<img class="parallel" src="image/eq-3-sm.jpg" alt="amplifier">
 
 
 							</div>
@@ -460,17 +459,12 @@
 	</footer>
 
 
-    <script>
-		$(function() {
-		    $('.twitter,.coconara,.hatena,.niconico').matchHeight();
-		});
-	</script>
-    
-    
-    
-    
-    
-<script src="js/wow.min.js"></script>
+
+
+
+
+
+	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
@@ -478,17 +472,17 @@
 
 
 
-<script type="text/javascript">
-//ページ内リンク、#非表示。スムーズスクロール
-  $('a[href^="#"]').click(function(){
-    var speed = 800;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
-    return false;
-  });
-</script>
+	<script type="text/javascript">
+		//ページ内リンク、#非表示。スムーズスクロール
+		  $('a[href^="#"]').click(function(){
+		    var speed = 800;
+		    var href= $(this).attr("href");
+		    var target = $(href == "#" || href == "" ? 'html' : href);
+		    var position = target.offset().top;
+		    $("html, body").animate({scrollTop:position}, speed, "swing");
+		    return false;
+		  });
+	</script>
 
 
 
@@ -526,7 +520,8 @@
 	</script>
 
 
-	
+
+
 
 
 </body>

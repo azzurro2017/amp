@@ -4,6 +4,7 @@
 
 
 
+
 /*　共通定義　*/
 
 *,
@@ -51,6 +52,23 @@ img {
 }
 
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+.parallel {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px
+}
+
 
 
 
@@ -64,20 +82,6 @@ img {
 
 
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.parallel {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px
-}
 
 
 .clearfix:after {
@@ -128,6 +132,7 @@ img {
 
 
 
+
 /* header */
 
 header {
@@ -155,13 +160,14 @@ header {
 
 
 
+
 /* main */
 
 
 /* Hero */
 
 .bg-hero {
-  background-image: url(../image/hero.JPG);
+  background-image: url(../image/hero.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -177,6 +183,7 @@ header {
   line-height: 1;
   font-size: 7vw;
 }
+
 
 
 
@@ -200,6 +207,7 @@ header {
 
 
 
+
 /* Activity */
 
 .twitter,
@@ -210,6 +218,16 @@ header {
 }
 
 
+
+.twitter,
+.coconara,
+.hatena,
+.niconico {
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 
 
 
@@ -236,6 +254,7 @@ header {
 
 
 
+
 /* Work */
 
 .work h3 {
@@ -247,11 +266,13 @@ header {
 }
 
 
+
 /*play list*/
 
-.play-list{
-    padding-bottom: 100px;
+.play-list {
+  padding-bottom: 100px;
 }
+
 
 
 
@@ -280,6 +301,7 @@ header {
 .eq-pc {
   display: none;
 }
+
 
 
 /* Workflow */
@@ -329,6 +351,7 @@ header {
 
 
 
+
 /* Price */
 
 .price {
@@ -353,12 +376,13 @@ header {
 
 
 
+
 /* Contact */
 
 #page-top {
   position: fixed;
   bottom: 60px;
-  right: 1px;
+  right: 10px;
   font-size: 77%;
 }
 
@@ -385,6 +409,7 @@ header {
 
 
 
+
 /* Footer */
 
 footer {
@@ -392,6 +417,7 @@ footer {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 
 
 
@@ -502,7 +528,7 @@ footer {
 
   h2 {
     font-size: 4rem;
-    padding: 60px 0 15px;
+    padding: 110px 0 15px;
   }
 
 
@@ -524,11 +550,16 @@ footer {
     margin: 0 auto;
   }
 
-    
+
+
+
+
+
+
   #about p {
-  width: 60%;
-  margin: 100px 0 200px 
-}
+    width: 60%;
+    margin: 100px 0 200px
+  }
 
 
   .sp-menu {
@@ -590,6 +621,19 @@ footer {
     width: 80%
   }
 
+
+  .twitter,
+  .coconara,
+  .hatena,
+  .niconico {
+    width: 50%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+
+
   .embed-soundcloud {
     width: 60%;
   }
@@ -603,7 +647,7 @@ footer {
   }
 
   .eq-pc img {
-  max-width: 33.33%
+    max-width: 33.33%;
   }
 
 
