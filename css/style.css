@@ -2,9 +2,6 @@
 
 
 
-
-
-
 /*　共通定義　*/
 
 *,
@@ -72,14 +69,10 @@ img {
 
 
 
-
-/*    //調整中　*/
-
 .container {
   width: 90%;
   margin: 0 auto;
 }
-
 
 
 
@@ -108,24 +101,13 @@ img {
   margin: 70px 0 50px 0;
 }
 
-#about,
-#activity,
-#customer-voice,
-#work,
-#play-list,
-#equipment,
-#workflow,
-#price,
-#contact {
-  padding-top: 30px;
-  margin-top: -30px;
-}
 
 
 
 .diagram {
   width: 100%;
 }
+
 
 
 
@@ -151,6 +133,7 @@ header {
 .drawer-hamburger {
   margin-right: 20px;
 }
+
 
 
 
@@ -187,6 +170,7 @@ header {
 
 
 
+
 /* About */
 
 .bg-main01 {
@@ -197,7 +181,7 @@ header {
 
 
 
-.coconara-margin {
+.coconala-margin {
   margin: 0 30%;
 }
 
@@ -208,10 +192,11 @@ header {
 
 
 
+
 /* Activity */
 
 .twitter,
-.coconara,
+.coconala,
 .hatena,
 .niconico {
   margin-top: 40px;
@@ -220,7 +205,7 @@ header {
 
 
 .twitter,
-.coconara,
+.coconala,
 .hatena,
 .niconico {
   width: 100%;
@@ -231,6 +216,13 @@ header {
 
 
 
+.common-size {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 80%;
+  max-height: 380px;
+  border-radius: 2%;
+}
 
 
 
@@ -255,15 +247,18 @@ header {
 
 
 
+
 /* Work */
 
 .work h3 {
-  margin: 40px 0
+  padding-top: 40px
 }
+
 
 .work p {
   margin: 30px 0
 }
+
 
 
 
@@ -272,6 +267,7 @@ header {
 .play-list {
   padding-bottom: 100px;
 }
+
 
 
 
@@ -291,6 +287,13 @@ header {
 }
 
 
+.equipment {
+  padding-bottom: 50px;
+}
+
+.space {
+  width: 60%;
+}
 
 
 .equipment p {
@@ -301,6 +304,7 @@ header {
 .eq-pc {
   display: none;
 }
+
 
 
 
@@ -343,10 +347,11 @@ header {
 }
 
 
-.sp-complement {
+.complement {
   width: 70%;
   margin: 40px auto 0;
 }
+
 
 
 
@@ -368,6 +373,7 @@ header {
 .tablet-complement {
   display: none;
 }
+
 
 
 
@@ -410,6 +416,7 @@ header {
 
 
 
+
 /* Footer */
 
 footer {
@@ -417,6 +424,7 @@ footer {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 
 
 
@@ -448,6 +456,9 @@ footer {
   }
 
 
+     .diagram{
+         width: 60%;
+    }
 
 
   .tablet-diagram {
@@ -455,11 +466,11 @@ footer {
   }
 
 
-
+   
 
 
   .twitter,
-  .coconara,
+  .coconala,
   .hatena,
   .niconico,
   .customer-voice,
@@ -473,17 +484,13 @@ footer {
 
 
 
-  .sp-complement {
-    display: none;
-  }
-
 
   .tablet-complement {
     display: block;
   }
 
   .workflow ol {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
   }
 
@@ -516,11 +523,20 @@ footer {
   .pc-menu {
     display: none;
   }
-  /*
-  #price {
-    margin: 100px;
+
+
+  #about,
+  #activity,
+  #customer-voice,
+  #work,
+  #play-list,
+  #equipment,
+  #workflow,
+  #price,
+  #contact {
+    padding-top: 30px;
+    margin-top: -30px;
   }
-  */
 }
 
 
@@ -623,7 +639,7 @@ footer {
 
 
   .twitter,
-  .coconara,
+  .coconala,
   .hatena,
   .niconico {
     width: 50%;
@@ -631,7 +647,6 @@ footer {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-
 
 
   .embed-soundcloud {
@@ -642,21 +657,32 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80%;
     margin: 0 auto;
+    width: 70%;
   }
 
   .eq-pc img {
-    max-width: 33.33%;
+    width: 33.333%;
+    -o-object-fit: contain;
+    object-fit: contain;
   }
 
+  .left {
+    float: left;
+    width: 50%
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+  }
 
 
 
   #box1 {
     height: 100vh;
     width: 100%;
-    background-image: url(../image/sample01.jpeg);
+    background-image: url(../image/plx01-rv.jpg);
 
     background-size: cover;
     background-attachment: fixed;
@@ -666,7 +692,7 @@ footer {
   #box2 {
     height: 100vh;
     width: 100%;
-    background-image: url(../image/sample02.jpeg);
+    background-image: url(../image/plx02.jpg);
 
     background-size: cover;
     background-attachment: fixed;
