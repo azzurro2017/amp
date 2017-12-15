@@ -232,6 +232,18 @@ header {
 
 
 
+  
+
+
+
+
+
+
+
+
+
+
+
 /* Customer voice */
 
 .bg-main02 {
@@ -497,11 +509,25 @@ footer {
 
     
     .common-size{
+/*        768px以上の時*/
 /*        width: 90%;
-        height: 90% */
-            
-        height: 370px
+        height: 90% */ 
+        height: 370px;
     }
+    
+
+/*    追記事項*/
+    .embed{
+        width: 95%;
+        margin: 0 auto
+    }
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -689,6 +715,23 @@ display: block
   }
 
 
+    /*    追記事項*/
+        .embed{
+        width: 75%;
+        margin: 0 auto
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   .embed-soundcloud {
     width: 60%;
   }
